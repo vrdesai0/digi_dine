@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 98.8vw;
+}
+
+.back{
+    height: 99vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-position:unset;
+    background-size: 100vw;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/501/79/805/5bd36121a877e-wallpaper-preview.jpg);
+    position: absolute;
+    position:fixed;
+    filter: blur(2px);
+    top: 0;
+    z-index: -1;
+}
+.txt{
+    height: 100vh;
+    width: 100%;
+    /* margin-top: -15px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* padding-top: 200px; */
+    /* position: sticky; */
+    top: 0;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+}
+.container{
+    
+    /* width: 100%;
+    height: 95vh; */
+    /* background-image: url(https://c4.wallpaperflare.com/wallpaper/977/548/906/beach-water-pier-tropical-wallpaper-preview.jpg); */
+    /* background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 47, 12); */
+}
+.grid{
+    width: 100%;
+    height: 87vh;
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    gap: 88px;
+    grid-template-rows: 205px 205px;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    
+}
+img{
+    cursor: pointer;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 18px;
+    height: 205px;
+    width: 320px;
+    
+}
+.box1 img{
+    
+    
+    /* background-image: url(resources/img1.jpg);
+    background-size: cover; */
+}
+.box2{
+    background-image: url(resources/img2.png);
+    background-size: cover;
+}
+.box3{
+    background-image: url(resources/img3.webp);
+    background-size: cover;
+}
+.box4{
+    background-image: url(resources/img4.jpg);
+    background-size: cover;
+}
+.box5{
+    background-image: url(resources/img5.jpg);
+    background-size: cover;
+}
+.box6{
+    background-image: url(resources/img6.jpg);
+    background-size: cover;
+}
+.imgsize{
+    height: 205px;
+    width: 320px;
+}

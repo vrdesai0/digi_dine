@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Booking</title>
+    <link rel="stylesheet" href="../explore/nav.css">
+    <link rel="stylesheet" href="hotel.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="../index/index.html">Home</a></li>
+                <li><a href="../explore/explore.html">Explore</a></li>
+                <li><a href="../login/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="login-container">
+        <div class="box"></div>
+    </div>
+    <div class="log">Booking</div>
+
+    <div class="infobox">
+        <div class="lg_site">Make a Reservation</div>
+    </div>
+    <img src="../explore/resources/img4.jpg" alt="">
+    <div class="bx">
+
+        <form action="#">
+            <div class="info">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your full name" required>
+                </div>
+                <div>
+                    <label for="number">Phone Number</label>
+                    <input type="tel" name="number" id="number" placeholder="phone number"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+                <div>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div>
+                    <label for="time">Time&nbsp;&nbsp;&nbsp;</label>
+                    <input type="time" name="time" id="time">
+                </div>
+                <div class="combine">
+                    <label for="person">Number Of Persons </label>
+                    <input type="number" name="pnumber" id="pnumber" placeholder="no. of persons">
+                    <br>
+                    <small style="font-size: small;">
+                        Note : Table will be allocated according to number of persons
+                    </small>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+
+
+</body>
+
+</html>

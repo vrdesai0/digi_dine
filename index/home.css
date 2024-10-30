@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-image: url('Restaurant-web-design.jpg'); */
+    width: 98.8vw;
+}
+
+header .head{
+    /* padding: 10px 0; */
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    gap: 235px;
+    align-items: center;
+    background-color: #e1b505;
+}
+.head img{
+    margin-top: 7px;
+}
+.head h1{
+    text-shadow: 2px 3px 6px red;
+    font-style: italic;
+    color: rgb(64, 10, 226);
+    /* color: white; */
+    /* font-family: 'Indie Flower', cursive; */
+}
+.section1 p{
+    color: aqua;
+    font-size:xx-large;
+    font-weight: bolder;
+}
+.navigation{
+    position: sticky;
+    top: 0;
+    /* z-index: 10; */
+}
+.navigation nav{
+    background-color: #e1b505;
+    display:flex; 
+    justify-content:flex-end;
+    align-items: flex-end;
+    height: 5vh;
+}
+nav ul {
+    margin-right: 25px;
+    gap: 35px;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    text-shadow: 2px 3px 6px red;
+    font-style: italic;
+    color: rgb(64, 10, 226);
+}
+a:hover{
+    color: red;
+}
+button:hover{
+    background-color: rgba(41, 142, 182, 0.226);
+}
+.box {
+    /* top: 5vh; */
+    /* background-color: rgba(0, 0, 0, 0.103); */
+    margin-top: 10px;
+    width: 100%;
+    height: 80vh;
+    opacity: 0.34;
+    position: absolute;
+    z-index: -1;
+}
+.section1 {
+    height: 80vh;
+    width: 100%;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+.cta-button {
+    text-shadow: 2px 3px 6px red;
+    font-style: italic;
+    color: rgb(64, 10, 226);
+    background-color: rgba(248, 248, 248, 0.233);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 1;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.container{
+    /* margin-top: 10px; */
+    position: absolute;
+    z-index: -1;
+}
+.slider {
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0) );
+    overflow: hidden;
+    width: 98.8vw;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    /* opacity: 0.94; */
+    filter: brightness(0.99);
+   }
+   .sltext{
+    padding-top: 85px;
+    display: flex;
+    /* align-items:first baseline; */
+    justify-content: center;
+    color: #f77506;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+    font-size:52px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+   }
+    
+   .slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slider 15s infinite;
+   }
+    
+   .slider .slide:nth-child(1) {
+      background-image: url('resources/bg1.png');
+      animation-delay: 0s;
+   }
+   
+   .slider .slide:nth-child(2) {
+      background-image: url('resources/bg2.png');
+      animation-delay: -3s;
+   }
+   
+   .slider .slide:nth-child(3) {
+      background-image: url('resources/bg3.png');
+      animation-delay: -6s;
+   }
+   
+   .slider .slide:nth-child(4) {
+      background-image: url('resources/bg4.png');
+      animation-delay: -9s;
+   }
+   
+   .slider .slide:nth-child(5) {
+      background-image: url('resources/bg5.png');
+      animation-delay: -12s;
+   }
+   
+   @keyframes slider {
+    0%, 16%, 100% {
+      transform: translateX(0);
+      animation-timing-function: ease;
+    }
+    20% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    96% {
+      transform: translateX(100%);
+      animation-timing-function: ease;
+    }
+}
+
+.med {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .med {
+        text-align: center;
+        display: block;
+    }
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .navigation {
+        display: none;
+    }
+    .back {
+        display: none;
+    }
+}
